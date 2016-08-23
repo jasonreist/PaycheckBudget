@@ -1,0 +1,21 @@
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\bin\Debug\PB.Common.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\bin\Debug\PB.Common.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.csprojResolveAssemblyReference.cache
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\bin\Debug\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\bin\Debug\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Common\obj\Debug\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\bin\Debug\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\bin\Debug\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\bin\Debug\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\obj\Debug\PB.Common.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\obj\Debug\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Common\obj\Debug\PB.Common.pdb

@@ -1,0 +1,38 @@
+﻿@using PB.UI.Models
+@model ListBillsViewModel
+@{
+    ViewBag.Title = "Your Bill List";
+}
+
+<h1>Your Bills</h1>
+<div class="pull-right"><a href="~/Bills/Create">Create Bill</a></div>
+<div style="clear:both;"></div>
+<div class="">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Due</th>
+                    <th>Bill</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var b in Model.Bills)
+                {
+                    <tr id="BillRow_@b.Id">
+                        <td>@b.DueDay@b.DueDaySuffix</td>
+                        <td>
+                            <div class="Rounded" style="background-color:#@b.BackgroundColor; color:#@b.ForeColor; padding:3px 5px 3px 5px; display:inline-block; cursor:pointer;" onclick="window.location.href = '/Bills/Edit/@b.Id';">
+                                <span id="BillName_@b.Id">@b.Name</span> &nbsp;&nbsp; @b.Amount.ToString("C")
+                            </div>
+                        </td>
+                        <td><a href="~/Bills/Custom/@b.Id">Custom Bills (@b.CustomBillCount.ToString())</a></td>
+                        <td><input type="button" class="btn btn-default" id="btnDeleteBill_@b.Id" value="Delete" onclick="DeleteBill(@b.Id);" /></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,146 @@
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Services.dll.config
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Services.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Services.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\Antlr3.Runtime.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\EntityFramework.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\Newtonsoft.Json.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Business.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Entities.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Cors.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Helpers.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Mvc.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Optimization.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Razor.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\WebGrease.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Domain.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\AutoMapper.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Business.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Entities.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\EntityFramework.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\Newtonsoft.Json.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Helpers.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Mvc.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Optimization.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.Razor.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\Antlr3.Runtime.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\PB.Domain.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\AutoMapper.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\bin\AutoMapper.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.csprojResolveAssemblyReference.cache
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Services.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Services.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Services.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\Antlr3.Runtime.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\Microsoft.Web.Infrastructure.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Cors.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Helpers.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Mvc.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Optimization.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\WebGrease.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Domain.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Helpers.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Mvc.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Optimization.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\Antlr3.Runtime.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\PB.Domain.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\obj\Debug\PB.Services.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Services\bin\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Services.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Services.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Services.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\Antlr3.Runtime.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\Microsoft.Web.Infrastructure.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Cors.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Helpers.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Mvc.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Optimization.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\WebGrease.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Domain.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Net.Http.Formatting.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.Cors.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Helpers.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Http.WebHost.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Mvc.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Optimization.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.Deployment.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\System.Web.WebPages.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\Antlr3.Runtime.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\PB.Domain.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\bin\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\obj\Debug\PB.Services.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\obj\Debug\PB.Services.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Services\obj\Debug\PB.Services.pdb

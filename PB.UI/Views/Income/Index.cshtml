@@ -1,0 +1,49 @@
+﻿@using PB.UI.Models
+@model IncomeViewModel
+@{
+    ViewBag.Title = "Income";
+}
+
+<h1>Income</h1>
+
+@Html.HiddenFor(m => m.Paychecks[0].UserID)
+
+<div class="">
+
+    <h3>Paychecks</h3>
+    <div class="row show-grid" style="padding-bottom:3px;">
+        <div class="col-md-2"><strong>Type</strong></div>
+        <div class="col-md-4"><strong>Amount</strong></div>
+        <div class="col-md-2">&nbsp;</div>
+    </div>
+    @for (var index = 0; index < @Model.Paychecks.Count(); index++)
+    {
+        <div class="row show-grid" style="height:40px;">
+            <div class="col-md-2" style="text-transform:capitalize;"><span id="Type_@index">@Model.Paychecks[index].Type</span></div>
+            <div class="col-md-4">
+                @Html.TextBoxFor(m => m.Paychecks[index].Amount)
+            </div>
+            <div class="col-md-2">
+                @Html.HiddenFor(m => m.Paychecks[index].ID)
+                <input type="button" class="btn btn-default" id="btnAddUpdatePaycheck_@index" value="@(Model.Paychecks[index].Exists ? "Save" : "Create")" onclick="AddUpdatePaycheck(@index);" />
+            </div>
+        </div>
+    }
+
+
+    <h3>Payday Seed</h3>
+    <div class="row">
+        <div class="col-md-2">@Html.LabelFor(m => m.PayDay.Paydate)</div>
+        <div class="col-md-4">@Html.EditorFor(m => m.PayDay.Paydate)</div>
+        <div class="col-md-2">
+            <input type="button" class="btn btn-default" id="btnAddUpdatePayDay" value="Save" onclick="AddUpdatePayday();" />
+            @Html.HiddenFor(m => m.PayDay.Id)
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    IncomeSetup();
+</script>

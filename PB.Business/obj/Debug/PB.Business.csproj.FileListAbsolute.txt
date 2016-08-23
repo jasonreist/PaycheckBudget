@@ -1,0 +1,57 @@
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll.config
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Domain.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Entities.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Domain.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Entities.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.csprojResolveAssemblyReference.cache
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Domain.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Domain.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.Business\obj\Debug\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Business.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Domain.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Domain.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.pdb

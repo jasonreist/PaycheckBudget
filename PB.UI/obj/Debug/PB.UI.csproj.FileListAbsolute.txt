@@ -1,0 +1,198 @@
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\AutoMapper.Net4.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.UI.dll.config
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.UI.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.UI.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Antlr3.Runtime.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\AutoMapper.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\EntityFramework.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Newtonsoft.Json.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Owin.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.Common.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.Entities.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Helpers.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Mvc.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Optimization.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Razor.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\WebGrease.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.Common.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\PB.Entities.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\AutoMapper.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\AutoMapper.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\AutoMapper.Net4.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\EntityFramework.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Helpers.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Mvc.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Optimization.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.Razor.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Antlr3.Runtime.pdb
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Newtonsoft.Json.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.csprojResolveAssemblyReference.cache
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.dll
+C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.UI.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.UI.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.UI.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Antlr3.Runtime.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Web.Infrastructure.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Helpers.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Mvc.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Optimization.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\WebGrease.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\AutoMapper.Net4.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Helpers.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Mvc.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Optimization.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Antlr3.Runtime.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PB - PaycheckBudget\PB.UI\obj\Debug\PB.UI.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\AutoMapper.Net4.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.UI.dll.config
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.UI.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.UI.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Antlr3.Runtime.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\AutoMapper.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Web.Infrastructure.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Newtonsoft.Json.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Owin.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.Common.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.Entities.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Helpers.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Mvc.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Optimization.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\WebGrease.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.Common.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\PB.Entities.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\AutoMapper.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\AutoMapper.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\AutoMapper.Net4.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\EntityFramework.SqlServer.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Net.Http.Formatting.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Helpers.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Mvc.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Optimization.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.Deployment.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\System.Web.WebPages.Razor.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Antlr3.Runtime.pdb
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Newtonsoft.Json.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Core.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.Owin.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Facebook.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Cookies.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.OAuth.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Google.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.Twitter.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\obj\Debug\PB.UI.csprojResolveAssemblyReference.cache
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\obj\Debug\PB.UI.dll
+\\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.UI\obj\Debug\PB.UI.pdb

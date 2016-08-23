@@ -1,0 +1,106 @@
+﻿@using PB.UI.Models
+@model EditBillViewModel
+@{
+    ViewBag.Title = "Edit Bill";
+}
+
+
+<h1>Edit Bill</h1>
+
+
+
+
+
+<div class="">
+
+@using (Html.BeginForm())
+    {
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Bill.Id)
+    @Html.HiddenFor(model => model.Bill.UserId)
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <tr id="Name">
+                    <td style="width:110px;">@Html.LabelFor(model => model.Bill.Name)</td>
+                    <td>@Html.TextBoxFor(model => model.Bill.Name, new { @class = "form-control" })</td>
+                </tr>
+                <tr id="Amount">
+                    <td>@Html.LabelFor(model => model.Bill.Amount)</td>
+                    <td>
+                        <div class="form-group" style="margin-bottom:0px !important;">
+                            <div class="input-group">
+                                <div class="input-group-addon">$</div>
+                                @Html.TextBoxFor(model => model.Bill.Amount, new { @class = "form-control" })
+                            </div>
+                        </div>                        
+                    </td>
+                </tr>
+                <tr id="Due_Day">
+                    <td>@Html.LabelFor(model => model.Bill.DueDay)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.Bill.DueDay)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editbillsduedayddl" data-toggle="dropdown" aria-expanded="true">
+                                @Model.Bill.DueDay.ToString()@Model.Bill.DueDaySuffix <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="duedayddl">
+                                @foreach (var d in Model.DOTM)
+                                {
+                                    <li role="presentation" class="@d.Class duedayli"><a role="menuitem" tabindex="-1" href="#">@d.Text</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Bill_Style">
+                    <td><label>Bill Style</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="padding:5px; border-radius:5px;" data-bind="style: { color: ForeColor, backgroundColor: BGColor }">
+                                        <span id="spanName" style="">@Model.Bill.Name</span>&nbsp;
+                                        <span id="spanAmount" style="">@Model.Bill.Amount.ToString("C")</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="">
+                            <tr style="">
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.Bill.BackgroundColor)</td>
+                                <td style="border-top: none !important; padding:5px;">                                    
+                                    @Html.TextBoxFor(model => model.Bill.BackgroundColor, new { @class = "form-control", data_bind = "value:BGColor" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.Bill.ForeColor)</td>
+                                <td style="border-top: none !important; padding:5px;">
+                                    @Html.TextBoxFor(model => model.Bill.ForeColor, new { @class = "form-control", data_bind = "value:ForeColor" })
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="Custom_Bills" style="display:none;">
+                    <td>@Html.LabelFor(model => model.CustomBills)</td>
+                    <td>
+                        @foreach (var cb in Model.CustomBills)
+                        {
+                            @cb.BillDate.ToShortDateString() @cb.Amount.ToString("C")<br />
+                        }
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="button" value="Save" class="btn btn-default" onclick="SaveBill();" />&nbsp;&nbsp;&nbsp;<input type="button" value="Cancel" class="btn btn-default" onclick="window.location.href = '/Bills/';" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    }
+</div>
+
+<script type="text/javascript">
+    CreateEditBillSetup('@Model.Bill.BackgroundColor', '@Model.Bill.ForeColor');
+</script>
