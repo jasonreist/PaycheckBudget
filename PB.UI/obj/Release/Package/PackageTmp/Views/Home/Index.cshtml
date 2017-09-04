@@ -1,0 +1,85 @@
+﻿@using PB.UI.Models
+@model HomePageViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<section>
+@foreach (var details in Model.Paychecks)
+{
+    <div class="page-header @details.Summary.CurrentClass" style="border-radius:10px; padding:1px 0 0 10px; margin-top:10px;">
+        <h2>
+            @details.Summary.Payday.ToShortDateString()
+            <small>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                Credits: <span style="font-size:14px;">@details.Summary.Credits.ToString("C")</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Debits: <span style="font-size:14px;">@details.Summary.Debits.ToString("C")</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="@(@details.Summary.Remaining < 0 ? "list-group-item-danger" : "")">Remaining: <span style="font-size:14px;">@details.Summary.Remaining.ToString("C")</span></span>
+            </small>
+        </h2>
+    </div>
+
+    <div id="Week_1" class="row">
+        @foreach (var day in details.Days.Take(7))
+        {                    
+            <div class="col-sm-1 col-md-2" style="font-family:verdana; font-size:10px;">
+                <ul class="list-group">
+                    <li class="list-group-item @(@day.Date.ToShortDateString() == DateTime.Now.ToShortDateString() ? "list-group-item-info" : "") text-center"><strong>@day.Date.DayOfWeek.ToString()</strong><br />@day.Date.ToShortDateString()</li>
+                    <li class="list-group-item">
+                        @foreach (var bill in @day.Bills)
+                        {
+                            <div style="border-radius:5px; padding:3px; margin:0 0 3px 0; line-height:11px; text-align:center; background-color:#@bill.BackgroundColor; color:#@bill.ForeColor;">
+                                @bill.Name<br />@bill.Amount.ToString("C")
+                            </div>
+                        }
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+
+    <div id="Week_2" class="row">                
+        @foreach (var day in details.Days.Skip(7).Take(7))
+        {
+            <div class="col-sm-1 col-md-2" style="font-family:verdana; font-size:10px;">
+                <ul class="list-group">
+                    <li class="list-group-item @(@day.Date.ToShortDateString() == DateTime.Now.ToShortDateString() ? "list-group-item-info" : "") text-center"><strong>@day.Date.DayOfWeek.ToString()</strong><br />@day.Date.ToShortDateString()</li>
+                    <li class="list-group-item">
+                        @foreach (var bill in @day.Bills)
+                        {
+                            <div style="border-radius:5px; padding:3px; margin:0 0 3px 0; line-height:11px; text-align:center; background-color:#@bill.BackgroundColor; color:#@bill.ForeColor;">
+                                @bill.Name<br />@bill.Amount.ToString("C")
+                            </div>
+                        }
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+
+    if (@details.Days.Count > 14)
+    {
+    <div id="Week_3" class="row">
+        @foreach (var day in details.Days.Skip(14).Take(7))
+        {
+            <div class="col-sm-1 col-md-2" style="font-family:verdana; font-size:10px;">
+                <ul class="list-group">
+                    <li class="list-group-item @(@day.Date.ToShortDateString() == DateTime.Now.ToShortDateString() ? "list-group-item-info" : "") text-center"><strong>@day.Date.DayOfWeek.ToString()</strong><br />@day.Date.ToShortDateString()</li>
+                    <li class="list-group-item">
+                        @foreach (var bill in @day.Bills)
+                        {
+                            <div style="border-radius:5px; padding:3px; margin:0 0 3px 0; line-height:11px; text-align:center; background-color:#@bill.BackgroundColor; color:#@bill.ForeColor;">
+                                @bill.Name<br />@bill.Amount.ToString("C")
+                            </div>
+                        }
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+    }
+    <div class="divider"></div>
+}
+</section>

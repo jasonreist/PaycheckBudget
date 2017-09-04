@@ -25,6 +25,10 @@
                         <td>@b.DueDay@b.DueDaySuffix</td>
                         <td>
                             <div class="Rounded" style="background-color:#@b.BackgroundColor; color:#@b.ForeColor; padding:3px 5px 3px 5px; display:inline-block; cursor:pointer;" onclick="window.location.href = '/Bills/Edit/@b.Id';">
+                                @if (!string.IsNullOrEmpty(b.Icon))
+                                {
+                                <i class="fa @b.Icon"></i>
+                                }
                                 <span id="BillName_@b.Id">@b.Name</span> &nbsp;&nbsp; @b.Amount.ToString("C")
                             </div>
                         </td>

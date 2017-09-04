@@ -1,0 +1,110 @@
+﻿@using PB.UI.Models
+@model CreateBillViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h1>Create Bill</h1>
+<div class="pull-right"><a href="~/Bills/">Back to List</a></div>
+<div style="clear:both;"></div>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.UserId)
+
+    <div class="table-responsive_">
+        <table class="table">
+            <tbody>
+                <tr id="Bill_Name">
+                    <td style="width:110px;">@Html.LabelFor(model => model.Name)</td>
+                    <td>@Html.TextBoxFor(model => model.Name, new { @class = "form-control", data_bind = "value:Name" })</td>
+                </tr>
+                <tr id="Bill_Amount">
+                    <td>@Html.LabelFor(model => model.Amount)</td>
+                    <td>
+                        <div class="form-group" style="margin-bottom:0px !important;">
+                            <div class="input-group">
+                                <div class="input-group-addon">$</div>
+                                @Html.TextBoxFor(model => model.Amount, new { @class = "form-control", data_bind = "value:Amount" })
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Due_Day">
+                    <td>@Html.LabelFor(model => model.DueDay)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.DueDay)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editbillsduedayddl" data-toggle="dropdown" aria-expanded="true">
+                                @Model.DueDay.ToString()@Model.DueDaySuffix <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="duedayddl" style="overflow-x:hidden; overflow-y:scroll;">
+                                @foreach (var d in Model.DOTM)
+                                {
+                                    <li role="presentation" class="@d.Class duedayli"><a role="menuitem" tabindex="-1" href="#">@d.Text</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Icon">
+                    <td>@Html.LabelFor(model => model.Icon)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.Icon)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editbillsiconddl" data-toggle="dropdown" aria-expanded="true">
+                               <i class="fa @Model.Icon"></i> fa @Model.Icon<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="iconddl" style=" overflow-x:hidden; overflow-y:scroll;">
+                                @foreach (var icon in PB.Common.Helpers.Icon.Icons)
+                                {
+                                <li role="presentation" class="iconli" style="font-size: x-large"><a role="menuitem" tabindex="-1" href="#"><i class="fa @icon"></i> fa @icon</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Bill_Style">
+                    <td><label>Bill Style</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="padding:5px; border-radius:5px;" data-bind="style: { color: ForeColor, backgroundColor: BGColor }">
+                                        <i id="iconpreview"></i> <span id="spanName" style="" data-bind="text: Name"></span>&nbsp;
+                                        <span id="spanAmount" style="" data-bind="currency: Amount, symbol:'$'"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="">
+                            <tr style="">
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.BackgroundColor)</td>
+                                <td style="border-top: none !important; padding:5px; width:100px;">
+                                    @Html.TextBoxFor(model => model.BackgroundColor, new { @class = "form-control", data_bind = "value:BGColor", @type = "color" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.ForeColor)</td>
+                                <td style="border-top: none !important; padding:5px;">
+                                    @Html.TextBoxFor(model => model.ForeColor, new { @class = "form-control", data_bind = "value:ForeColor", @type = "color" })
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" clas="btn btn-default" value="Create" class="btn btn-default" onclick="CreateBill();" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
+
+
+
+<script type="text/javascript">
+    CreateEditBillSetup('ff0000', 'ffffff', "fa-arrow-right");
+</script>

@@ -1,0 +1,7 @@
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\bin\Release\PB.Common.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\bin\Release\PB.Common.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\bin\Release\Newtonsoft.Json.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\bin\Release\Newtonsoft.Json.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\obj\Release\PB.Common.csprojResolveAssemblyReference.cache
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\obj\Release\PB.Common.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Common\obj\Release\PB.Common.pdb

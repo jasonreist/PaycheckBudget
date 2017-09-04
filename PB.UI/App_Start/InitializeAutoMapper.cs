@@ -18,10 +18,13 @@ namespace PB.UI.App_Start
             AutoMapper.Mapper.CreateMap<BillViewModel, Entities.Bill>();
             AutoMapper.Mapper.CreateMap<Entities.Bill, BillViewModel>()
                     .ForMember(x => x.DueDaySuffix, opt => opt.Ignore())
+                    .ForMember(x => x.Paycheck, opt => opt.UseValue(null))
                     .ForMember(x => x.CustomBillCount, opt => opt.Ignore());
 
-            AutoMapper.Mapper.CreateMap<CreateBillViewModel, Entities.Bill>();
-            AutoMapper.Mapper.CreateMap<Entities.Bill, CreateBillViewModel>()
+            AutoMapper.Mapper.CreateMap<CreateBillViewModel, Entities.Bill>()
+                    //.ForMember(x => x.Glyphicon, opt => opt.Ignore())
+                    ;
+      AutoMapper.Mapper.CreateMap<Entities.Bill, CreateBillViewModel>()
                     .ForMember(x => x.DueDaySuffix, opt => opt.Ignore())
                     .ForMember(x => x.DOTM, opt => opt.Ignore());
 
@@ -39,6 +42,7 @@ namespace PB.UI.App_Start
 
             #region INCOME
             AutoMapper.Mapper.CreateMap<Entities.Paycheck, PaycheckViewModel>()
+                    .ForMember(x => x.PayCheck, opt => opt.UseValue(null))
                     .ForMember(x => x.Exists, opt => opt.Ignore());
             #endregion
 

@@ -14,7 +14,7 @@
     @Html.AntiForgeryToken()
     @Html.HiddenFor(model => model.UserId)
 
-    <div class="table-responsive">
+    <div class="table-responsive_">
         <table class="table">
             <tbody>
                 <tr id="Bill_Name">
@@ -40,10 +40,27 @@
                             <button class="btn btn-default dropdown-toggle" type="button" id="editbillsduedayddl" data-toggle="dropdown" aria-expanded="true">
                                 @Model.DueDay.ToString()@Model.DueDaySuffix <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="duedayddl" style="height:200px; overflow-x:hidden; overflow-y:scroll;">
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="duedayddl" style="overflow-x:hidden; overflow-y:scroll;">
                                 @foreach (var d in Model.DOTM)
                                 {
                                     <li role="presentation" class="@d.Class duedayli"><a role="menuitem" tabindex="-1" href="#">@d.Text</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Icon">
+                    <td>@Html.LabelFor(model => model.Icon)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.Icon)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editbillsiconddl" data-toggle="dropdown" aria-expanded="true">
+                               <i class="fa @Model.Icon"></i> fa @Model.Icon<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="iconddl" style=" overflow-x:hidden; overflow-y:scroll;">
+                                @foreach (var icon in PB.Common.Helpers.Icon.Icons)
+                                {
+                                <li role="presentation" class="iconli" style="font-size: x-large"><a role="menuitem" tabindex="-1" href="#"><i class="fa @icon"></i> fa @icon</a></li>
                                 }
                             </ul>
                         </div>
@@ -56,7 +73,7 @@
                             <tr>
                                 <td>
                                     <div style="padding:5px; border-radius:5px;" data-bind="style: { color: ForeColor, backgroundColor: BGColor }">
-                                        <span id="spanName" style="" data-bind="text: Name"></span>&nbsp;
+                                        <i id="iconpreview"></i> <span id="spanName" style="" data-bind="text: Name"></span>&nbsp;
                                         <span id="spanAmount" style="" data-bind="currency: Amount, symbol:'$'"></span>
                                     </div>
                                 </td>
@@ -65,14 +82,14 @@
                         <table style="">
                             <tr style="">
                                 <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.BackgroundColor)</td>
-                                <td style="border-top: none !important; padding:5px;">
-                                    @Html.TextBoxFor(model => model.BackgroundColor, new { @class = "form-control", data_bind = "value:BGColor" })
+                                <td style="border-top: none !important; padding:5px; width:100px;">
+                                    @Html.TextBoxFor(model => model.BackgroundColor, new { @class = "form-control", data_bind = "value:BGColor", @type = "color" })
                                 </td>
                             </tr>
                             <tr>
                                 <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.ForeColor)</td>
                                 <td style="border-top: none !important; padding:5px;">
-                                    @Html.TextBoxFor(model => model.ForeColor, new { @class = "form-control", data_bind = "value:ForeColor" })
+                                    @Html.TextBoxFor(model => model.ForeColor, new { @class = "form-control", data_bind = "value:ForeColor", @type = "color" })
                                 </td>
                             </tr>
                         </table>
@@ -89,5 +106,5 @@
 
 
 <script type="text/javascript">
-    CreateEditBillSetup('ff0000','ffffff');
+    CreateEditBillSetup('ff0000', 'ffffff', "fa-arrow-right");
 </script>

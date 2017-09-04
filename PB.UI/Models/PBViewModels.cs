@@ -13,38 +13,46 @@ using System.ComponentModel;
 
 namespace PB.UI.Models
 {
-    public class BillViewModel
-    {
-        public int Id { get; set; }
-        public Guid UserId { get; set; }
-        public string Name { get; set; }
-        public decimal Amount { get; set; }
-        [DisplayName("Due Day")]
-        public int DueDay { get; set; }
-        public string DueDaySuffix { get; set; }
-        public int CustomBillCount { get; set; }
-        [DisplayName("Background Color")]
-        public string BackgroundColor { get; set; }
-        [DisplayName("Fore Color")]
-        public string ForeColor { get; set; }
+  public class BillViewModel
+  {
+    public int Id { get; set; }
+    public Guid UserId { get; set; }
+    public string Name { get; set; }
+    public string Icon { get; set; }
+    public decimal Amount { get; set; }
 
-        public BillViewModel()
-        {
-        }
-        public BillViewModel(BillViewModel other)
-        {
-            this.UserId = other.UserId;
-            this.Name = other.Name;
-            this.Amount = other.Amount;
-            this.DueDay = other.DueDay;
-            this.DueDaySuffix = other.DueDaySuffix;
-            this.CustomBillCount = other.CustomBillCount;
-            this.BackgroundColor = other.BackgroundColor;
-            this.ForeColor = other.ForeColor;
-        }
+    [DisplayName("Due Day")]
+    public int DueDay { get; set; }
+
+    public string DueDaySuffix { get; set; }
+    public int CustomBillCount { get; set; }
+
+    [DisplayName("Background Color")]
+    public string BackgroundColor { get; set; }
+
+    [DisplayName("Fore Color")]
+    public string ForeColor { get; set; }
+
+    public PaycheckDetailsViewModel Paycheck { get; set; }
+
+    public BillViewModel()
+    {
     }
 
-    public class ListBillsViewModel
+    public BillViewModel(BillViewModel other)
+    {
+      this.UserId = other.UserId;
+      this.Name = other.Name;
+      this.Amount = other.Amount;
+      this.DueDay = other.DueDay;
+      this.DueDaySuffix = other.DueDaySuffix;
+      this.CustomBillCount = other.CustomBillCount;
+      this.BackgroundColor = other.BackgroundColor;
+      this.ForeColor = other.ForeColor;
+    }
+  }
+
+  public class ListBillsViewModel
     {
         [Key]
         public int Id { get; set; }
@@ -75,8 +83,9 @@ namespace PB.UI.Models
     {
         public int Id { get; set; }
         public Guid UserId { get; set; }
-        public string Name { get; set; }
-        public decimal Amount { get; set; }
+    public string Name { get; set; }
+    public string Icon { get; set; }
+    public decimal Amount { get; set; }
         [DisplayName("Due Day")]
         public int DueDay { get; set; }
         public string DueDaySuffix { get; set; }
@@ -231,7 +240,7 @@ namespace PB.UI.Models
         public Int32 ID { get; set; }
         public Guid UserID { get; set; }
         public string Type { get; set; }
-        public decimal Amount { get; set; }
+        public Paycheck PayCheck { get; set; }
         public bool Exists { get; set; }
 
         public PaycheckViewModel()
@@ -239,12 +248,11 @@ namespace PB.UI.Models
         }
         public PaycheckViewModel(Guid userid, string type)
         {
-            this.Type = type;
-            this.UserID = userid;
-            PBProxy p = new PBProxy();
-            this.Amount = p.GetPaycheck(userid.ToString(), type).Amount;
-            this.Exists = true;
-            p = null;
+            Type = type;
+            UserID = userid;
+            var p = new PBProxy();
+            PayCheck = p.GetPaycheck(userid.ToString(), type);
+            Exists = this.PayCheck != null;
         }
     }
 
@@ -282,9 +290,9 @@ namespace PB.UI.Models
             int index = 0;
             foreach (string type in "A,B,C,D".Split(','))
             {
-                if (!this.Paychecks.Any(a => a.Type == type))
+                if (this.Paychecks.All(a => a.Type != type))
                 {
-                    this.Paychecks.Insert(index, new PaycheckViewModel() { Type = type, Exists = false, Amount = 0, UserID = userid });
+                    this.Paychecks.Insert(index, new PaycheckViewModel() { Type = type, Exists = false, UserID = userid, PayCheck = null});
                 }
                 index++;
             }
@@ -305,161 +313,370 @@ namespace PB.UI.Models
     }
     public class DayViewModel
     {
-        public DateTime Date { get; set; }
-        public List<BillViewModel> Bills { get; set; }
-        public DayViewModel() { this.Bills = new List<BillViewModel>(); }
+    public int Index { get; set; }
+      public DateTime Date { get; set; }
+      public List<BillViewModel> Bills { get; set; }
+      public PaycheckDetailsViewModel Paycheck { get; set; }
+      public int PaydayIndex { get; set; }
+    public DayViewModel() { this.Bills = new List<BillViewModel>(); }
+    public string MonthColor { get; set; }
     }
 
-    public class HomePageViewModel
+  public class NewHomePageViewModel
+  {
+    public int DayIndexOfCurrentPeriod { get; set; }
+    public List<PaycheckDetailsViewModel> Paychecks { get; set; }
+    public List<DayViewModel> Days { get; set; }
+
+    public NewHomePageViewModel(Guid userid)
     {
-        public List<PaycheckDetailsViewModel> Paychecks { get; set; }
+      var currentMonth = -1;
+      var currentMonthIndex = -1;
+      string[] monthColors = { "C4FFEA", "D1D7FF", "FFCCF9", "FFF6D8" };
+      Days = new List<DayViewModel>();
+      var db = new PBProxy();
+      var settings = SettingsViewModel.GetSettings(userid);
+      var AllBills = new ListBillsViewModel(userid);
 
-        public HomePageViewModel(Guid userid)
+      var PayDaySeed = db.GetPaydays(userid).FirstOrDefault();
+      var CurrentMonth = 0;
+      
+      SetSeed(ref PayDaySeed, settings.PreviousPeriodsToShow);
+      var payChecks = GetPaydays(PayDaySeed.Paydate);
+
+      var firstDay = FindFirstDay(PayDaySeed);
+
+      var currentCheckIndex = 0;
+      PaycheckSummaryViewModel summary = null;
+      var paycheckdetails = new PaycheckDetailsViewModel();
+
+      var daysShowing = (settings.ChecksToShow + 1)*14;
+      var showData = false;
+      for (var dayIndex = 0; dayIndex < daysShowing; dayIndex++)
+      {
+        #region For Each Day In Pay Period
+        var tempdate = firstDay.AddDays(dayIndex);
+        if (tempdate.Month != currentMonth)
         {
-            SettingsViewModel settings = SettingsViewModel.GetSettings(userid);
-            this.Paychecks = new List<PaycheckDetailsViewModel>();
+          currentMonth = tempdate.Month;
+          currentMonthIndex++;
+        }
+        var day = new DayViewModel { Date = tempdate, Index = dayIndex, MonthColor = monthColors[currentMonthIndex]};
+        var paycheckType = tempdate.Day <= 14 ? "A" : "B";
+        
+        if (payChecks.Any(a => a == tempdate))
+        {
+          DayIndexOfCurrentPeriod = tempdate > DateTime.Now ? DayIndexOfCurrentPeriod : dayIndex;
+          var inLastPaycheck = (daysShowing - dayIndex) < 13;
+          showData = !inLastPaycheck;
+          if (currentCheckIndex > 0)
+          {
+            paycheckdetails = new PaycheckDetailsViewModel {Summary = summary};
+            Days.FirstOrDefault(a => a.Index == currentCheckIndex).Paycheck = paycheckdetails;
+            summary = new PaycheckSummaryViewModel();
+          }
+          currentCheckIndex = dayIndex;
+          summary = new PaycheckSummaryViewModel
+          {
+            Payday = tempdate,
+            Credits = new PaycheckViewModel(userid, paycheckType).PayCheck.Amount
+          };
 
-            DayViewModel day = null;
-            PaycheckSummaryViewModel summary = null;
+          #region Tithe
 
-            PBProxy p = new PBProxy();
-            Payday PayDaySeed = p.GetPaydays(userid).FirstOrDefault();
-            SetSeed(ref PayDaySeed, settings.PreviousPeriodsToShow);
-            
-            ListBillsViewModel AllBills = new ListBillsViewModel(userid);
-
-            int CurrentMonth = 0;
-            bool WillMonthChange = false;
-
-            for (int checkIndex = 0; checkIndex < settings.ChecksToShow; checkIndex++)
+          if (showData && settings.AddTithe)
+          {
+            var tithe = new BillViewModel
             {
-                DateTime thisdate = PayDaySeed.Paydate.AddDays(checkIndex * 14);
-                string PaycheckType = thisdate.Day <= 14 ? "A" : "B";
+              Name = "",
+              Icon = "fa-heart-o",
+              Amount = summary.Credits*settings.TitheMultiplier,
+              BackgroundColor = settings.TitheBGColor,
+              ForeColor = settings.TitheForeColor,
+              DueDay = tempdate.Day
+            };
+            day.Bills.Add(tithe);
 
-                PaycheckDetailsViewModel paycheckdetails = new PaycheckDetailsViewModel();
-                PaycheckViewModel Paycheck = new PaycheckViewModel(userid, PaycheckType);
-
-                summary = new PaycheckSummaryViewModel();
-                summary.Payday = thisdate;
-                summary.Credits = Paycheck.Amount;
-
-                #region For Each Day In Pay Period
-                for (int dayIndex = 0; dayIndex < 14; dayIndex++)
-                {
-                    DateTime tempdate = thisdate.AddDays(dayIndex);
-                    if (CurrentMonth == 0 | tempdate.Day == 31 | tempdate.Day < 28)
-                        WillMonthChange = false;
-                    else
-                        WillMonthChange = tempdate.AddDays(1).Month != CurrentMonth;
-                    CurrentMonth = tempdate.Month;
-
-                    day = new DayViewModel();
-                    day.Date = tempdate;
-
-                    #region Tithe
-                    if (dayIndex == 0)
-                    {
-                        if (settings.AddTithe)
-                        {
-                            BillViewModel Tithe = new BillViewModel();
-                            Tithe.Name = "Tithe";
-                            Tithe.Amount = Paycheck.Amount * settings.TitheMultiplier;
-                            Tithe.BackgroundColor = settings.TitheBGColor;
-                            Tithe.ForeColor = settings.TitheForeColor;
-                            summary.Debits += Tithe.Amount;
-                            Tithe.DueDay = tempdate.Day;
-                            day.Bills.Add(Tithe);
-                        }
-                    }
-                    #endregion
-
-                    if (tempdate.ToShortDateString() == DateTime.Now.ToShortDateString()) summary.CurrentClass = "list-group-item-info";
-                    if (AllBills.Bills.Any(b => b.DueDay == tempdate.Day))
-                    {
-                        List<BillViewModel> todaysbills = AllBills.Bills.Where(b => b.DueDay == tempdate.Day).ToList();
-                        foreach (BillViewModel todaysbill in todaysbills)
-                        {
-                            CustomBillsViewModel CustomBills = new CustomBillsViewModel(todaysbill.Id);
-                            CustomBillViewModel thiscustombill = CustomBills.CustomBills.FirstOrDefault(cb => cb.BillDate == tempdate);
-
-                            if (thiscustombill != null)
-                            {
-                                BillViewModel billcopy = new BillViewModel(todaysbill);
-                                //billcopy.Name = "* " + billcopy.Name;
-                                billcopy.Amount = thiscustombill.Amount;
-                                day.Bills.Add(billcopy);
-                                summary.Debits += billcopy.Amount;
-                            }
-                            else
-                            {
-                                day.Bills.Add(todaysbill);
-                                summary.Debits += todaysbill.Amount;
-                            }
-                        }
-                    }
-
-                    #region Month Changed
-                    if (WillMonthChange)
-                    {
-                        for (int d = tempdate.Day + 1; d < 32; d++)
-                        {
-                            if (AllBills.Bills.Any(b => b.DueDay == d))
-                            {
-                                List<BillViewModel> todaysbills = AllBills.Bills.Where(b => b.DueDay == d).ToList();
-                                foreach (BillViewModel todaysbill in todaysbills)
-                                {
-                                    CustomBillsViewModel CustomBills = new CustomBillsViewModel(todaysbill.Id);
-                                    CustomBillViewModel thiscustombill = CustomBills.CustomBills.FirstOrDefault(cb => cb.BillDate.Month == CurrentMonth);
-
-                                    if (thiscustombill != null)
-                                    {
-                                        BillViewModel billcopy = new BillViewModel(todaysbill);
-                                        //billcopy.Name = "* " + billcopy.Name + " (" + d.ToString() + ")";
-                                        billcopy.Amount = thiscustombill.Amount;
-                                        day.Bills.Add(billcopy);
-                                        summary.Debits += billcopy.Amount;
-                                    }
-                                    else
-                                    {
-                                        //todaysbill.Name = todaysbill.Name + " (" + d.ToString() + ")";
-                                        day.Bills.Add(todaysbill);
-                                        summary.Debits += todaysbill.Amount;
-                                    }
-                                }
-                            }
-
-                        }
-                    }
-                    #endregion
-
-                    paycheckdetails.Days.Add(day);
-                }
-                #endregion
-
-                paycheckdetails.Summary = summary;
-                summary = null;
-
-                this.Paychecks.Add(paycheckdetails);
-                paycheckdetails = null;
-            }
-
-            p = null;
+            #endregion
+          }
         }
+        day.PaydayIndex = currentCheckIndex;
+        //day.Bills.Add(new BillViewModel() { Amount = 0, Name = dayIndex.ToString()});
 
-        internal void SetSeed(ref Payday seed, int PreviousPeriodsToShow)
+        var WillMonthChange = false;
+        if (CurrentMonth == 0 | tempdate.Day == 31 | tempdate.Day < 28)
+          WillMonthChange = false;
+        else
+          WillMonthChange = tempdate.AddDays(1).Month != CurrentMonth;
+        CurrentMonth = tempdate.Month;
+
+        if (showData)
         {
-            DateTime today = DateTime.Now;
-            bool FoundCurrent = false;
-            while (!FoundCurrent)
-            {   //this will find the current pay period
-                seed.Paydate = seed.Paydate.AddDays(14);
-                FoundCurrent = (today > seed.Paydate && today < seed.Paydate.AddDays(14));
+          if (tempdate.ToShortDateString() == DateTime.Now.ToShortDateString())
+          {
+            if (summary != null) summary.CurrentClass = "list-group-item-info";
+          }
+          if (AllBills.Bills.Any(b => b.DueDay == tempdate.Day))
+          {
+            var todaysbills = AllBills.Bills.Where(b => b.DueDay == tempdate.Day).ToList();
+            foreach (var todaysbill in todaysbills)
+            {
+              var CustomBills = new CustomBillsViewModel(todaysbill.Id);
+              var thiscustombill =
+                CustomBills.CustomBills.FirstOrDefault(
+                  cb => cb.BillDate.Year == tempdate.Year && cb.BillDate.Month == tempdate.Month);
+
+              if (thiscustombill != null)
+              {
+                var billcopy = new BillViewModel(todaysbill);
+                billcopy.Amount = thiscustombill.Amount;
+                day.Bills.Add(billcopy);
+                if (summary != null) summary.Debits += billcopy.Amount;
+              }
+              else
+              {
+                day.Bills.Add(todaysbill);
+                if (summary != null) summary.Debits += todaysbill.Amount;
+              }
             }
-            seed.Paydate = seed.Paydate.AddDays((PreviousPeriodsToShow * 14) * -1);
+          }
+
+          #region Month Changed
+
+          if (WillMonthChange)
+          {
+            for (var d = tempdate.Day + 1; d < 32; d++)
+            {
+              if (AllBills.Bills.Any(b => b.DueDay == d))
+              {
+                var todaysbills = AllBills.Bills.Where(b => b.DueDay == d).ToList();
+                foreach (BillViewModel todaysbill in todaysbills)
+                {
+                  var CustomBills = new CustomBillsViewModel(todaysbill.Id);
+                  var thiscustombill = CustomBills.CustomBills.FirstOrDefault(cb => cb.BillDate.Month == CurrentMonth);
+
+                  if (thiscustombill != null)
+                  {
+                    var billcopy = new BillViewModel(todaysbill);
+                    billcopy.Amount = thiscustombill.Amount;
+                    day.Bills.Add(billcopy);
+                  }
+                  else
+                  {
+                    day.Bills.Add(todaysbill);
+                  }
+                }
+              }
+
+            }
+          }
+
+          #endregion
         }
+        this.Days.Add(day);
+      }
+      summary.Debits = 0;
+      paycheckdetails = new PaycheckDetailsViewModel { Summary = summary };
+      Days.FirstOrDefault(a => a.Index == currentCheckIndex).Paycheck = paycheckdetails;
+      #endregion
+
+      db = null;
     }
 
-    public class SettingsViewModel
+    private List<DateTime> GetPaydays(DateTime seed)
+    {
+      var list = new List<DateTime>();
+
+      for (var i = 0; i < (14*10); i=i+14)
+      {
+        list.Add(seed.AddDays(i));
+      }
+
+      return list;
+    }
+
+    private DateTime FindFirstDay(Payday payDaySeed)
+    {
+      var dowIndex = (int)payDaySeed.Paydate.DayOfWeek;
+
+      return payDaySeed.Paydate.AddDays(0 - dowIndex);
+    }
+
+    internal void SetSeed(ref Payday seed, int PreviousPeriodsToShow)
+    {
+      DateTime today = DateTime.Now;
+      bool FoundCurrent = false;
+      while (!FoundCurrent)
+      {
+        //this will find the current pay period
+        seed.Paydate = seed.Paydate.AddDays(14);
+        FoundCurrent = (today > seed.Paydate && today < seed.Paydate.AddDays(14));
+      }
+      seed.Paydate = seed.Paydate.AddDays((PreviousPeriodsToShow * 14) * -1);
+    }
+  }
+
+  public class HomePageViewModel
+  {
+    public List<PaycheckDetailsViewModel> Paychecks { get; set; }
+  
+    public HomePageViewModel(Guid userid)
+    {
+      SettingsViewModel settings = SettingsViewModel.GetSettings(userid);
+      this.Paychecks = new List<PaycheckDetailsViewModel>();
+
+      DayViewModel day = null;
+      PaycheckSummaryViewModel summary = null;
+
+      PBProxy p = new PBProxy();
+      Payday PayDaySeed = p.GetPaydays(userid).FirstOrDefault();
+      SetSeed(ref PayDaySeed, settings.PreviousPeriodsToShow);
+
+      ListBillsViewModel AllBills = new ListBillsViewModel(userid);
+
+      int CurrentMonth = 0;
+      bool WillMonthChange = false;
+
+      for (int checkIndex = 0; checkIndex < settings.ChecksToShow; checkIndex++)
+      {
+        DateTime thisdate = PayDaySeed.Paydate.AddDays(checkIndex*14);
+        string PaycheckType = thisdate.Day <= 14 ? "A" : "B";
+
+        PaycheckDetailsViewModel paycheckdetails = new PaycheckDetailsViewModel();
+        PaycheckViewModel Paycheck = new PaycheckViewModel(userid, PaycheckType);
+
+        summary = new PaycheckSummaryViewModel();
+        summary.Payday = thisdate;
+        summary.Credits = Paycheck.PayCheck.Amount;
+
+        #region For Each Day In Pay Period
+
+        for (int dayIndex = 0; dayIndex < 14; dayIndex++)
+        {
+          DateTime tempdate = thisdate.AddDays(dayIndex);
+          if (CurrentMonth == 0 | tempdate.Day == 31 | tempdate.Day < 28)
+            WillMonthChange = false;
+          else
+            WillMonthChange = tempdate.AddDays(1).Month != CurrentMonth;
+          CurrentMonth = tempdate.Month;
+
+          day = new DayViewModel();
+          day.Date = tempdate;
+
+          #region Tithe
+
+          if (dayIndex == 0)
+          {
+            if (settings.AddTithe)
+            {
+              BillViewModel Tithe = new BillViewModel();
+              Tithe.Name = "Tithe";
+              Tithe.Amount = Paycheck.PayCheck.Amount*settings.TitheMultiplier;
+              Tithe.BackgroundColor = settings.TitheBGColor;
+              Tithe.ForeColor = settings.TitheForeColor;
+              summary.Debits += Tithe.Amount;
+              Tithe.DueDay = tempdate.Day;
+              day.Bills.Add(Tithe);
+            }
+          }
+
+          #endregion
+
+          if (tempdate.ToShortDateString() == DateTime.Now.ToShortDateString())
+            summary.CurrentClass = "list-group-item-info";
+          if (AllBills.Bills.Any(b => b.DueDay == tempdate.Day))
+          {
+            List<BillViewModel> todaysbills = AllBills.Bills.Where(b => b.DueDay == tempdate.Day).ToList();
+            foreach (BillViewModel todaysbill in todaysbills)
+            {
+              CustomBillsViewModel CustomBills = new CustomBillsViewModel(todaysbill.Id);
+              CustomBillViewModel thiscustombill =
+                CustomBills.CustomBills.FirstOrDefault(
+                  cb => cb.BillDate.Year == tempdate.Year && cb.BillDate.Month == tempdate.Month);
+
+              if (thiscustombill != null)
+              {
+                BillViewModel billcopy = new BillViewModel(todaysbill);
+                //billcopy.Name = "* " + billcopy.Name;
+                billcopy.Amount = thiscustombill.Amount;
+                day.Bills.Add(billcopy);
+                summary.Debits += billcopy.Amount;
+              }
+              else
+              {
+                day.Bills.Add(todaysbill);
+                summary.Debits += todaysbill.Amount;
+              }
+            }
+          }
+
+          #region Month Changed
+
+          if (WillMonthChange)
+          {
+            for (int d = tempdate.Day + 1; d < 32; d++)
+            {
+              if (AllBills.Bills.Any(b => b.DueDay == d))
+              {
+                List<BillViewModel> todaysbills = AllBills.Bills.Where(b => b.DueDay == d).ToList();
+                foreach (BillViewModel todaysbill in todaysbills)
+                {
+                  CustomBillsViewModel CustomBills = new CustomBillsViewModel(todaysbill.Id);
+                  CustomBillViewModel thiscustombill =
+                    CustomBills.CustomBills.FirstOrDefault(cb => cb.BillDate.Month == CurrentMonth);
+
+                  if (thiscustombill != null)
+                  {
+                    BillViewModel billcopy = new BillViewModel(todaysbill);
+                    //billcopy.Name = "* " + billcopy.Name + " (" + d.ToString() + ")";
+                    billcopy.Amount = thiscustombill.Amount;
+                    day.Bills.Add(billcopy);
+                    summary.Debits += billcopy.Amount;
+                  }
+                  else
+                  {
+                    //todaysbill.Name = todaysbill.Name + " (" + d.ToString() + ")";
+                    day.Bills.Add(todaysbill);
+                    summary.Debits += todaysbill.Amount;
+                  }
+                }
+              }
+
+            }
+          }
+
+          #endregion
+
+          paycheckdetails.Days.Add(day);
+        }
+
+        #endregion
+
+        paycheckdetails.Summary = summary;
+        summary = null;
+
+        this.Paychecks.Add(paycheckdetails);
+        paycheckdetails = null;
+      }
+
+      p = null;
+    }
+
+    internal void SetSeed(ref Payday seed, int PreviousPeriodsToShow)
+    {
+      DateTime today = DateTime.Now;
+      bool FoundCurrent = false;
+      while (!FoundCurrent)
+      {
+        //this will find the current pay period
+        seed.Paydate = seed.Paydate.AddDays(14);
+        FoundCurrent = (today > seed.Paydate && today < seed.Paydate.AddDays(14));
+      }
+      seed.Paydate = seed.Paydate.AddDays((PreviousPeriodsToShow*14)*-1);
+    }
+  }
+
+  public class SettingsViewModel
     {
         public Guid UserID { get; set; }
 

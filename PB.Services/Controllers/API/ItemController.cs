@@ -105,7 +105,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpPost]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("CreateBill/")]
         public HttpResponseMessage CreateBill(Bill bill)
         {
@@ -128,7 +128,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpPost]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("CreateCustomBill/")]
         public HttpResponseMessage CreateCustomBill(CustomBill custombill)
         {
@@ -151,7 +151,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpPut]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("UpdateBill/")]
         public HttpResponseMessage UpdateBill(Bill bill)
         {
@@ -169,7 +169,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpPut]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("UpdateCustomBill/")]
         public HttpResponseMessage UpdateCustomBill(CustomBill custombill)
         {
@@ -187,7 +187,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpDelete]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("deleteBill/")]
         public void DeleteBill(Bill bill)
         {
@@ -197,7 +197,7 @@ namespace PB.Services.Controllers.API
 
 
         [HttpDelete]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("DeleteCustomBill/")]
         public void DeleteCustomBill(CustomBill custombill)
         {
@@ -256,7 +256,7 @@ namespace PB.Services.Controllers.API
         //--------------------------------------------------------
         [HttpPost]
         [Route("CreatePaycheck/")]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         public HttpResponseMessage CreatePaycheck(Paycheck paycheck)
         {
             Paycheck tempItem = new Paycheck();
@@ -316,7 +316,7 @@ namespace PB.Services.Controllers.API
         //--------------------------------------------------------
         [HttpPut]
         [Route("UpdatePaycheck/")]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         public HttpResponseMessage UpdatePaycheck(Paycheck paycheck)
         {
             if (paycheck == null) throw new ArgumentException("paycheck is null.");
@@ -346,7 +346,7 @@ namespace PB.Services.Controllers.API
         }
         [HttpPut]
         [Route("UpdatePayday/")]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         public HttpResponseMessage UpdatePayday(Payday payday)
         {
             if (payday == null) throw new ArgumentException("payday is null.");
@@ -363,7 +363,7 @@ namespace PB.Services.Controllers.API
         //--------------------------------------------------------
         [HttpDelete]
         [Route("DeletePaycheck/")]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         public void DeletePaycheck(Paycheck paycheck)
         {
             if (paycheck == null) throw new ArgumentException("paycheck is null.");
@@ -395,7 +395,7 @@ namespace PB.Services.Controllers.API
         }
 
         [HttpPut]
-        [EnableCors(origins: "http://localhost:53487", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:53487,http://www.pb.com,http://jasonreist-001-site1.htempurl.com", headers: "*", methods: "*")]
         [Route("UpdateSettings/")]
         public HttpResponseMessage UpdateSettings(Setting settings)
         {

@@ -55,3 +55,22 @@ C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Business\obj\Debug\P
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.csprojResolveAssemblyReference.cache
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.dll
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Business\obj\Debug\PB.Business.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll.config
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Business.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Business.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Domain.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Domain.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\PB.Entities.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\obj\Debug\PB.Business.csprojResolveAssemblyReference.cache
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\obj\Debug\PB.Business.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Business\obj\Debug\PB.Business.pdb

@@ -28,3 +28,12 @@ C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Entities\obj\Debug\P
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Entities\obj\Debug\PB.Entities.csprojResolveAssemblyReference.cache
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Entities\obj\Debug\PB.Entities.dll
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Entities\obj\Debug\PB.Entities.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\PB.Entities.dll.config
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\PB.Entities.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\EntityFramework.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\EntityFramework.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\obj\Debug\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\obj\Debug\PB.Entities.pdb

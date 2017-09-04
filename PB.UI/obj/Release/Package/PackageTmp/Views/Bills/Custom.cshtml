@@ -1,0 +1,57 @@
+﻿@using PB.UI.Models
+@model CustomBillsViewModel
+@{
+    ViewBag.Title = "Custom Bills";
+}
+
+
+<h1>Custom Bills</h1>
+
+<h3>@Model.Bill.Name <small>@Model.Bill.Amount.ToString("C")</small></h3>
+<div style="float:right;"><a href="~/Bills/">Bills</a></div>
+<div style="clear:both;"></div>
+
+<div class="">
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Bill.Id)
+
+        <div class="">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (var index = 0; index < Model.CustomBills.Count(); index++)
+                        {
+                            <tr>
+                                <td><span id="date_@index">@Model.CustomBills[index].BillDate.ToShortDateString()</span></td>
+                                <td>
+                                    @Html.TextBoxFor(m => m.CustomBills[index].Amount)
+                                </td>
+                                <td>
+                                    @Html.HiddenFor(m => m.CustomBills[index].Id)
+                                    @Html.HiddenFor(m => m.CustomBills[index].BillId)
+                                    @Html.HiddenFor(m => m.CustomBills[index].BillDate)
+                                    <input type="button" class="btn btn-default" id="btnAddUpdateCustomBill_@index" value="@(Model.CustomBills[index].Exists ? "Save" : "Create")" onclick="AddUpdateCustomBill(@index);" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+
+<script type="text/javascript">
+    CustomBillsSetup(@Model.Bill.Id, '@ViewBag.NADays');
+</script>

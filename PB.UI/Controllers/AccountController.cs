@@ -190,22 +190,103 @@ namespace PB.UI.Controllers
 
                     //CREATE SOME BILLS
                     //NOTE: If you alter these make sure you update the custom bills below.
-                    var bills = new List<Bill>
+                  var bills = new List<Bill>
+                  {
+                    new Bill
                     {
-                        new Bill{UserId=newuserid, Name="Mortgage/Rent", Amount=1042.24m, DueDay=1, ForeColor="ff00ff", BackgroundColor="000000"},
-                        new Bill{UserId=newuserid, Name="Cell Phone", Amount=75.57m, DueDay=3, ForeColor="cccccc", BackgroundColor="ff00ff"},
-                        new Bill{UserId=newuserid, Name="Cable/Internet", Amount=110.33m, DueDay=7, ForeColor="bababa", BackgroundColor="00ff00"},
-                        new Bill{UserId=newuserid, Name="Car Insurance", Amount=99.94m, DueDay=11, ForeColor="ff0000", BackgroundColor="000000"},
-                        new Bill{UserId=newuserid, Name="Electricity", Amount=150.15m, DueDay=16, ForeColor="0000ff", BackgroundColor="bababa"},
-                        new Bill{UserId=newuserid, Name="Water/Sewer", Amount=40.44m, DueDay=19, ForeColor="00ff00", BackgroundColor="000000"},
-                        new Bill{UserId=newuserid, Name="Car Payment", Amount=346.01m, DueDay=22, ForeColor="eeeeee", BackgroundColor="cacaca"},
-                        new Bill{UserId=newuserid, Name="Visa Credit Card", Amount=45.00m, DueDay=28, ForeColor="cecece", BackgroundColor="000000"},
-                        new Bill{UserId=newuserid, Name="31st Bill", Amount=90.31m, DueDay=31, ForeColor="000000", BackgroundColor="00FFFF"}
-                    };
-                            bills.ForEach(s => context.Bills.Add(s));
+                      UserId = newuserid,
+                      Name = "",
+                      Amount = 1042.24m,
+                      DueDay = 1,
+                      ForeColor = "ff00ff",
+                      BackgroundColor = "000000",
+                      Icon = "fa-home"
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "",
+                      Amount = 75.57m,
+                      DueDay = 3,
+                      ForeColor = "cccccc",
+                      BackgroundColor = "ff00ff",
+                      Icon = "fa-phone"
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Cable/Internet",
+                      Amount = 110.33m,
+                      DueDay = 7,
+                      ForeColor = "bababa",
+                      BackgroundColor = "00ff00",
+                      Icon = ""
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Car Insurance",
+                      Amount = 99.94m,
+                      DueDay = 11,
+                      ForeColor = "ff0000",
+                      BackgroundColor = "000000",
+                      Icon = ""
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Elec",
+                      Amount = 150.15m,
+                      DueDay = 16,
+                      ForeColor = "0000ff",
+                      BackgroundColor = "bababa",
+                      Icon = "fa-lightbulb-o"
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Water/Sewer",
+                      Amount = 40.44m,
+                      DueDay = 19,
+                      ForeColor = "00ff00",
+                      BackgroundColor = "000000",
+                      Icon = ""
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Car Payment",
+                      Amount = 346.01m,
+                      DueDay = 22,
+                      ForeColor = "eeeeee",
+                      BackgroundColor = "cacaca",
+                      Icon = "fa-bed"
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "Visa",
+                      Amount = 45.00m,
+                      DueDay = 28,
+                      ForeColor = "cecece",
+                      BackgroundColor = "000000",
+                      Icon = "fa-credit-card"
+                    },
+                    new Bill
+                    {
+                      UserId = newuserid,
+                      Name = "31st Bill",
+                      Amount = 90.31m,
+                      DueDay = 31,
+                      ForeColor = "000000",
+                      BackgroundColor = "00FFFF",
+                      Icon = ""
+                    }
+                  };
+                    bills.ForEach(s => context.Bills.Add(s));
 
-                            //CREATE A FEW CUSTOM BILLS
-                            var cbills = new List<CustomBill>
+                    //CREATE A FEW CUSTOM BILLS
+                    var cbills = new List<CustomBill>
                     {
                         new CustomBill() { BillId=2, Amount = 95.55m, BillDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 3)  },
                         new CustomBill() { BillId=2, Amount = 79.38m, BillDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month+1, 3)  },

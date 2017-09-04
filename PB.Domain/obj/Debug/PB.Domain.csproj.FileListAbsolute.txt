@@ -34,3 +34,15 @@ C:\Users\jstauffer\Source\Workspaces\PB - PaycheckBudget\PB.Domain\obj\Debug\PB.
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.csprojResolveAssemblyReference.cache
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.dll
 \\LMI-IT-FSS1\Users\jstauffer\Visual Studio 2013\Projects\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\PB.Domain.dll.config
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\PB.Domain.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\PB.Domain.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\EntityFramework.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\PB.Entities.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\EntityFramework.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.csprojResolveAssemblyReference.cache
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Domain\obj\Debug\PB.Domain.pdb

@@ -1,0 +1,10 @@
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\PB.Entities.dll.config
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\PB.Entities.pdb
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\EntityFramework.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\EntityFramework.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\obj\Release\PB.Entities.csprojResolveAssemblyReference.cache
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\obj\Release\PB.Entities.dll
+C:\Users\jason\Source\Repos\PaycheckBudget\PB.Entities\obj\Release\PB.Entities.pdb

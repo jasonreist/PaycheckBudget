@@ -3,7 +3,7 @@
     "debug": false,
     "newestOnTop": false,
     "progressBar": false,
-    "positionClass": "toast-top-full-width",
+    "positionClass": "toast-bottom-full-width",
     "preventDuplicates": false,
     "onclick": null,
     "showDuration": "300",
@@ -20,16 +20,16 @@ var URLBASE = GetUrlBase();
 
 function GetUrlBase()
 {
-    var url = 'http://localhost:53253/api/';
+    var url = "http://svc.pb.com/api/";
     var current = window.location.href;
-    if (current.indexOf('drifft') > -1)
+    if (current.indexOf('jasonreist') > -1)
     {
-        url = 'http://drifft-001-site3.smarterasp.net/api/';
+        url = "http://jasonreist-001-site2.htempurl.com/api/";
     }
     return url;
 }
 
-function CreateEditBillSetup(a,b)
+function CreateEditBillSetup(a,b,c)
 {
     $(document).ready(function () {
         $('li.duedayli').click(function (e) {
@@ -40,16 +40,32 @@ function CreateEditBillSetup(a,b)
             var txt = $(this).find(">:first-child").html();
             $("#editbillsduedayddl").html(txt + ' <span class="caret"></span>');
             var chosenday = txt.replace('th', '').replace('st', '').replace('rd', '');
+            $("#Bill_DueDay").val(chosenday);
             $("#DueDay").val(chosenday);
         });
+
+        $('li.iconli').click(function (e) {
+            $('li.iconli').each(function () {
+                $(this).removeClass().addClass('iconli');
+            });
+            $(this).addClass('iconli active');
+            var txt = $(this).find(">:first-child").html();
+            $("#editbillsiconddl").html(txt + ' <span class="caret"></span>');
+            var chosenIcon = txt.substr(txt.indexOf('>') + 9);
+            $("#iconpreview").removeClass().addClass('fa ' + chosenIcon);
+            $("#Bill_Icon").val(chosenIcon);
+            $("#Icon").val(chosenIcon);
+        });
+
+        $("#iconpreview").removeClass().addClass('fa ' + c);
     });
 
     // ViewModel
     var AppViewModel = function () {
-        this.Name = ko.observable('');
-        this.Amount = ko.observable('');
-        this.BGColor = ko.observable('#' + a);
-        this.ForeColor = ko.observable('#' + b);
+        this.Name = ko.observable("");
+        this.Amount = ko.observable("");
+        this.BGColor = ko.observable("#" + a);
+        this.ForeColor = ko.observable("#" + b);
     }
 
     // ViewModel instance
@@ -58,7 +74,6 @@ function CreateEditBillSetup(a,b)
     function UpdateColor(bcolor, fcolor) {
         app.BGColor(bcolor);
         app.ForeColor(fcolor);
-        //ko.applyBindings(app);
     }
 
     // Activates knockout.js
@@ -97,13 +112,14 @@ function SaveBill() {
     var userid = $('#Bill_UserId').val();
     var billid = $('#Bill_Id').val();
     var billname = $('#Bill_Name').val();
+    var billicon = $('#Bill_Icon').val();
     var amount = $('#Bill_Amount').val();
     var dueday = $('#Bill_DueDay').val();
     var bgcolor = $('#Bill_BackgroundColor').val().substr(1);
     var forecolor = $('#Bill_ForeColor').val().substr(1);
     
 
-    var source = { 'UserId': userid, 'Id': billid, 'Name': billname, 'DueDay': dueday, 'Amount': amount, 'BackgroundColor': bgcolor, 'ForeColor': forecolor };
+    var source = { 'UserId': userid, 'Id': billid, 'Name': billname, 'DueDay': dueday, 'Amount': amount, 'BackgroundColor': bgcolor, 'ForeColor': forecolor, 'Icon': billicon };
 
     var request = $.ajax({
         type: 'PUT',
@@ -123,12 +139,14 @@ function SaveBill() {
 function CreateBill() {
     var userid = $('#UserId').val();
     var billname = $('#Name').val();
+    var billicon = $('#Icon').val();
+    console.log(billicon);
     var amount = $('#Amount').val();
     var dueday = $('#DueDay').val();
     var bgcolor = $('#BackgroundColor').val().substr(1);
     var forecolor = $('#ForeColor').val().substr(1);
 
-    var source = { 'UserId': userid, 'Name': billname, 'DueDay': dueday, 'Amount': amount, 'BackgroundColor': bgcolor, 'ForeColor': forecolor };
+    var source = { 'UserId': userid, 'Name': billname, 'DueDay': dueday, 'Amount': amount, 'BackgroundColor': bgcolor, 'ForeColor': forecolor, 'Icon': billicon };
 
     var request = $.ajax({
         type: 'POST',

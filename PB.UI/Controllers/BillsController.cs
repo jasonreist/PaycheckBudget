@@ -14,12 +14,13 @@ using PB.UI.DAL;
 
 namespace PB.UI.Controllers
 {
-    [Authorize]
-    public class BillsController : Controller
-    {
-        private PBContext db = new PBContext();
+  [Authorize]
+  public class BillsController : Controller
+  {
+    private PBContext db = new PBContext();
 
-        public BillsController()
+
+  public BillsController()
         {
             this.db = new PBContext();
         }
@@ -58,35 +59,39 @@ namespace PB.UI.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Create()
-        {
-            Guid userGuid = new Guid(User.Identity.GetUserId());
-            CreateBillViewModel vm = new CreateBillViewModel();
-            vm.UserId = userGuid;
-            return View(vm);
-        }
-        [HttpPost]
-        [Route("Bills/Create")]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(CreateBillViewModel model)
-        {
-            if (!ModelState.IsValid) return View(model);
-            Guid userGuid = new Guid(User.Identity.GetUserId());
-            model.UserId = userGuid;
+    public ActionResult Create()
+    {
+      var userGuid = new Guid(User.Identity.GetUserId());
+      var vm = new CreateBillViewModel
+      {
+        UserId = userGuid,
+        Icon = "fa-500px"
+      };
+      return View(vm);
+    }
 
-            Bill newbill = Mapper.Map<CreateBillViewModel, Bill>(model);
-            newbill.BackgroundColor = newbill.BackgroundColor.Replace("#", "");
-            newbill.ForeColor = newbill.ForeColor.Replace("#", "");
+    [HttpPost]
+    [Route("Bills/Create")]
+    [ValidateAntiForgeryToken]
+    public ActionResult Create(CreateBillViewModel model)
+    {
+      if (!ModelState.IsValid) return View(model);
+      var userGuid = new Guid(User.Identity.GetUserId());
+      model.UserId = userGuid;
 
-            db.Bills.Add(newbill);
-            db.SaveChanges();
+      var newbill = Mapper.Map<CreateBillViewModel, Bill>(model);
+      newbill.BackgroundColor = newbill.BackgroundColor.Replace("#", "");
+      newbill.ForeColor = newbill.ForeColor.Replace("#", "");
 
-            return RedirectToAction("Index");
-        }
+      db.Bills.Add(newbill);
+      db.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
 
 
 
-        [Route("Bills/Custom/{id:int}")]
+    [Route("Bills/Custom/{id:int}")]
         public ActionResult Custom(int id)
         {
             CustomBillsViewModel vm = new CustomBillsViewModel(id);

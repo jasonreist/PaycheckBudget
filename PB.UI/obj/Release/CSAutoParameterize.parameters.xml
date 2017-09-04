@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PBContext_-Web.config Connection String" description="PBContext_ Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=C:\db\PBdb.mdf;Initial Catalog=PBdb;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jason\\Source\\Repos\\PaycheckBudget\\PB\.UI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PBContext_']/@connectionString" />
+  </parameter>
+  <parameter name="PBContext-Web.config Connection String" description="PBContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=sql5017.SmarterASP.NET;Initial Catalog=DB_A15339_PB2;User Id=DB_A15339_PB2_admin;Password=PBC0nt3Xt!;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jason\\Source\\Repos\\PaycheckBudget\\PB\.UI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PBContext']/@connectionString" />
+  </parameter>
+</parameters>

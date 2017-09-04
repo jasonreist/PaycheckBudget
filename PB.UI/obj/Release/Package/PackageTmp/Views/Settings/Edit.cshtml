@@ -1,0 +1,148 @@
+﻿@using PB.Common.Helpers
+@using PB.UI.Models
+@model SettingsViewModel
+@{
+    ViewBag.Title = "Settings";
+}
+
+
+<h1>Settings</h1>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.UserID)
+
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <tr id="PreviousPeriodsToShow_div">
+                    <td style="">@Html.LabelFor(model => model.PreviousPeriodsToShow)</td>
+                    <td>                        
+                        @Html.HiddenFor(model => model.PreviousPeriodsToShow)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editppddl" data-toggle="dropdown" aria-expanded="true">
+                                @Model.PreviousPeriodsToShow <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="ppddl" id="ppddl" style="height:200px; overflow-x:hidden; overflow-y:scroll;">
+                                <li role="presentation" class="ppli"><a role="menuitem" tabindex="-1" href="#">0</a></li>
+                                <li role="presentation" class="ppli"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                                <li role="presentation" class="ppli"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                                <li role="presentation" class="ppli"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="ChecksToShow_div">
+                    <td>@Html.LabelFor(model => model.ChecksToShow)</td>
+                    <td>                        
+                        @Html.HiddenFor(model => model.ChecksToShow)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editcsddl" data-toggle="dropdown" aria-expanded="true">
+                                @Model.ChecksToShow <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="csddl" id="csddl" style="height:200px; overflow-x:hidden; overflow-y:scroll;">
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">4</a></li>
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">5</a></li>
+                                <li role="presentation" class="csli"><a role="menuitem" tabindex="-1" href="#">6</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Days_in_period">
+                    <td>@Html.LabelFor(model => model.DaysInPeriod)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.DaysInPeriod)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editdipddl" data-toggle="dropdown" aria-expanded="true">
+                                @Model.DaysInPeriod.ToString() days <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dipddl" id="dipddl" style="height:200px; overflow-x:hidden; overflow-y:scroll;">
+                                <li role="presentation" class="dipli"><a role="menuitem" tabindex="-1" href="#">7 days</a></li>
+                                <li role="presentation" class="dipli"><a role="menuitem" tabindex="-1" href="#">14 days</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="WeekStartDay_div">
+                    <td>@Html.LabelFor(model => model.WeekStartDay)</td>
+                    <td>
+                        @Html.HiddenFor(model => model.WeekStartDay)
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="editsdddl" data-toggle="dropdown" aria-expanded="true">
+                                @Utility.DayOfWeek(Model.WeekStartDay) <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="sdddl" id="sdddl" style="height:200px; overflow-x:hidden; overflow-y:scroll;">
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Sunday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Monday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Tuesday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Wednesday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Thursday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Friday</a></li>
+                                <li role="presentation" class="sdli"><a role="menuitem" tabindex="-1" href="#">Saturday</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="Tithe">
+                    <td><label>Tithe/Offering</label></td>
+                    <td>
+                        <table>
+                            <tr style="">
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.AddTithe)</td>
+                                <td style="border-top: none !important; padding:5px;">                                    
+                                    @Html.HiddenFor(model => model.AddTithe)
+                                    <input type="checkbox" id="cbAddTithe" @(Model.AddTithe ? "checked" : "") />
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr style="">
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.TitheMultiplier)</td>
+                                <td style="border-top: none !important; padding:5px;">
+                                    @Html.TextBoxFor(model => model.TitheMultiplier, new { @class = "form-control" })
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="padding:5px; border-radius:5px;" data-bind="style: { color: ForeColor, backgroundColor: BGColor }">
+                                        <span id="spanName" style="">Tithe</span>&nbsp;
+                                        <span id="spanAmount" style=""></span>                                        
+                                        @Html.HiddenFor(model => model.PaycheckAmount)
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="">
+                            <tr style="">
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.TitheBGColor)</td>
+                                <td style="border-top: none !important; padding:5px;">
+                                    @Html.TextBoxFor(model => model.TitheBGColor, new { @class = "form-control", data_bind = "value:BGColor" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: none !important; padding:5px;">@Html.LabelFor(model => model.TitheForeColor)</td>
+                                <td style="border-top: none !important; padding:5px;">
+                                    @Html.TextBoxFor(model => model.TitheForeColor, new { @class = "form-control", data_bind = "value:ForeColor" })
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="btn btn-default" value="Save" onclick="UpdateSettings();" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
+
+
+
+<script type="text/javascript">
+    EditSettingsSetup('@Model.TitheBGColor', '@Model.TitheForeColor');
+</script>

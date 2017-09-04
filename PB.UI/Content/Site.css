@@ -36,7 +36,20 @@ div.Rounded{
   overflow: hidden;
   background-color: #000000;
 }
+.toast-top-full-width {  
+    top: 400px; 
+} 
 
 .na {
     background-color:red;
+}
+
+.amounts {
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.padding-right-left {
+    padding-left: 2px; 
+    padding-right: 2px;
 }
